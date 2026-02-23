@@ -1,2 +1,13 @@
-Male: 男
-Female: 女
+Male:
+  value:
+    tc: 男
+    sc: ""
+    jp: ""
+  comment: Male
+
+Female:
+  value:
+    tc: 女
+    sc: ""
+    jp: ""
+  comment: Female
