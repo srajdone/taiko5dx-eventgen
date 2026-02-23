@@ -3,1279 +3,1091 @@
 
 # Castles
 
-Castle:
-  value:
-    tc: ■城
-    sc: ""
-    jp: ■城
-  comment: Generated from JP↔TC table
-
 CastleAki:
   value:
     tc: 安藝城
     sc: ""
     jp: 安芸城
-  comment: Generated from JP↔TC table
 
 CastleAkutagawa:
   value:
     tc: 芥川城
     sc: ""
     jp: 芥川城
-  comment: Generated from JP↔TC table
 
 CastleAmagiri:
   value:
     tc: 天霧城
     sc: ""
     jp: 天霧城
-  comment: Generated from JP↔TC table
 
 CastleAnouTsu:
   value:
     tc: 安濃津城
     sc: ""
     jp: 安濃津城
-  comment: Generated from JP↔TC table
 
 CastleArioka:
   value:
     tc: 有岡城
     sc: ""
     jp: 有岡城
-  comment: Generated from JP↔TC table
 
 CastleBitchuuMatsuyama:
   value:
     tc: 備中松山城
     sc: ""
     jp: 備中松山城
-  comment: Generated from JP↔TC table
 
 CastleBitchuuTakamatsu:
   value:
     tc: 備中高松城
     sc: ""
     jp: 備中高松城
-  comment: Generated from JP↔TC table
 
 CastleDaishouji:
   value:
     tc: 大聖寺城
     sc: ""
     jp: 大聖寺城
-  comment: Generated from JP↔TC table
 
 CastleEdo:
   value:
     tc: 江戶城
     sc: ""
     jp: 江戸城
-  comment: Generated from JP↔TC table
 
 CastleFukuchiyama:
   value:
     tc: 福知山城
     sc: ""
     jp: 福知山城
-  comment: Generated from JP↔TC table
 
 CastleFunai:
   value:
     tc: 府內城
     sc: ""
     jp: 府内城
-  comment: Generated from JP↔TC table
 
 CastleFutamata:
   value:
     tc: 二俁城
     sc: ""
     jp: 二俣城
-  comment: Generated from JP↔TC table
 
 CastleGassanTomita:
   value:
     tc: 月山富田城
     sc: ""
     jp: 月山富田城
-  comment: Generated from JP↔TC table
 
 CastleGezan:
   value:
     tc: 下山城
     sc: ""
     jp: 下山城
-  comment: Generated from JP↔TC table
 
 CastleHachinohe:
   value:
     tc: 八戶城
     sc: ""
     jp: 八戸城
-  comment: Generated from JP↔TC table
 
 CastleHachiouji:
   value:
     tc: 八王子城
     sc: ""
     jp: 八王子城
-  comment: Generated from JP↔TC table
 
 CastleHagoromoIshi:
   value:
     tc: 羽衣石城
     sc: ""
     jp: 羽衣石城
-  comment: Generated from JP↔TC table
 
 CastleHikuma:
   value:
     tc: 曳馬城
     sc: ""
     jp: 曳馬城
-  comment: Generated from JP↔TC table
 
 CastleHino:
   value:
     tc: 日野城
     sc: ""
     jp: 日野城
-  comment: Generated from JP↔TC table
 
 CastleHinoKou:
   value:
     tc: 日野江城
     sc: ""
     jp: 日野江城
-  comment: Generated from JP↔TC table
 
 CastleHirado:
   value:
     tc: 平戶城
     sc: ""
     jp: 平戸城
-  comment: Generated from JP↔TC table
 
 CastleHitoyoshi:
   value:
     tc: 人吉城
     sc: ""
     jp: 人吉城
-  comment: Generated from JP↔TC table
 
 CastleHiyama:
   value:
     tc: 檜山城
     sc: ""
     jp: 檜山城
-  comment: Generated from JP↔TC table
 
 CastleHonjou:
   value:
     tc: 本庄城
     sc: ""
     jp: 本庄城
-  comment: Generated from JP↔TC table
 
 CastleIchijouTani:
   value:
     tc: 一乘谷城
     sc: ""
     jp: 一乗谷城
-  comment: Generated from JP↔TC table
 
 CastleIgaueNo:
   value:
     tc: 伊賀上野城
     sc: ""
     jp: 伊賀上野城
-  comment: Generated from JP↔TC table
 
 CastleIida:
   value:
     tc: 飯田城
     sc: ""
     jp: 飯田城
-  comment: Generated from JP↔TC table
 
 CastleIimori:
   value:
     tc: 飯盛城
     sc: ""
     jp: 飯盛城
-  comment: Generated from JP↔TC table
 
 CastleIiyama:
   value:
     tc: 飯山城
     sc: ""
     jp: 飯山城
-  comment: Generated from JP↔TC table
 
 CastleImahama:
   value:
     tc: 今濱城
     sc: ""
     jp: 今浜城
-  comment: Generated from JP↔TC table
 
 CastleInabaYama:
   value:
     tc: 稻葉山城
     sc: ""
     jp: 稲葉山城
-  comment: Generated from JP↔TC table
 
 CastleInamura:
   value:
     tc: 稻村城
     sc: ""
     jp: 稲村城
-  comment: Generated from JP↔TC table
 
 CastleIshiyamaHongan:
   value:
     tc: 石山本願城
     sc: ""
     jp: 石山本願城
-  comment: Generated from JP↔TC table
 
 CastleIwadeyama:
   value:
     tc: 岩出山城
     sc: ""
     jp: 岩出山城
-  comment: Generated from JP↔TC table
 
 CastleIwadono:
   value:
     tc: 岩殿城
     sc: ""
     jp: 岩殿城
-  comment: Generated from JP↔TC table
 
 CastleIwamura:
   value:
     tc: 岩村城
     sc: ""
     jp: 岩村城
-  comment: Generated from JP↔TC table
 
 CastleIwao:
   value:
     tc: 岩尾城
     sc: ""
     jp: 岩尾城
-  comment: Generated from JP↔TC table
 
 CastleIwatsuki:
   value:
     tc: 岩槻城
     sc: ""
     jp: 岩槻城
-  comment: Generated from JP↔TC table
 
 CastleIwaya:
   value:
     tc: 岩屋城
     sc: ""
     jp: 岩屋城
-  comment: Generated from JP↔TC table
 
 CastleIzushi:
   value:
     tc: 出石城
     sc: ""
     jp: 出石城
-  comment: Generated from JP↔TC table
 
 CastleKaizu:
   value:
     tc: 海津城
     sc: ""
     jp: 海津城
-  comment: Generated from JP↔TC table
 
 CastleKajiki:
   value:
     tc: 加治木城
     sc: ""
     jp: 加治木城
-  comment: Generated from JP↔TC table
 
 CastleKakunodate:
   value:
     tc: 角館城
     sc: ""
     jp: 角館城
-  comment: Generated from JP↔TC table
 
 CastleKanOnji:
   value:
     tc: 觀音寺城
     sc: ""
     jp: 観音寺城
-  comment: Generated from JP↔TC table
 
 CastleKaneishi:
   value:
     tc: 金石城
     sc: ""
     jp: 金石城
-  comment: Generated from JP↔TC table
 
 CastleKarasawaYama:
   value:
     tc: 唐澤山城
     sc: ""
     jp: 唐沢山城
-  comment: Generated from JP↔TC table
 
 CastleKarasuyama:
   value:
     tc: 烏山城
     sc: ""
     jp: 烏山城
-  comment: Generated from JP↔TC table
 
 CastleKasugaYama:
   value:
     tc: 春日山城
     sc: ""
     jp: 春日山城
-  comment: Generated from JP↔TC table
 
 CastleKatsuYama:
   value:
     tc: 且山城
     sc: ""
     jp: 且山城
-  comment: Generated from JP↔TC table
 
 CastleKatsuura:
   value:
     tc: 勝浦城
     sc: ""
     jp: 勝浦城
-  comment: Generated from JP↔TC table
 
 CastleKatsuyama:
   value:
     tc: 勝山城
     sc: ""
     jp: 勝山城
-  comment: Generated from JP↔TC table
 
 CastleKawagoe:
   value:
     tc: 河越城
     sc: ""
     jp: 河越城
-  comment: Generated from JP↔TC table
 
 CastleKawanoe:
   value:
     tc: 川之江城
     sc: ""
     jp: 川之江城
-  comment: Generated from JP↔TC table
 
 CastleKen:
   value:
     tc: 縣城
     sc: ""
     jp: 県城
-  comment: Generated from JP↔TC table
 
 CastleKetsu:
   value:
     tc: 結城
     sc: ""
     jp: 結城
-  comment: Generated from JP↔TC table
 
 CastleKinKeSaki:
   value:
     tc: 金崎城
     sc: ""
     jp: 金ヶ崎城
-  comment: Generated from JP↔TC table
 
 CastleKishiwada:
   value:
     tc: 岸和田城
     sc: ""
     jp: 岸和田城
-  comment: Generated from JP↔TC table
 
 CastleKisoFukushima:
   value:
     tc: 木曾福島城
     sc: ""
     jp: 木曽福島城
-  comment: Generated from JP↔TC table
 
 CastleKitaNoShou:
   value:
     tc: 北之庄城
     sc: ""
     jp: 北ノ庄城
-  comment: Generated from JP↔TC table
 
 CastleKiyosu:
   value:
     tc: 清洲城
     sc: ""
     jp: 清洲城
-  comment: Generated from JP↔TC table
 
 CastleKomakiyama:
   value:
     tc: 小牧山城
     sc: ""
     jp: 小牧山城
-  comment: Generated from JP↔TC table
 
 CastleKomatsu:
   value:
     tc: 小松城
     sc: ""
     jp: 小松城
-  comment: Generated from JP↔TC table
 
 CastleKomoro:
   value:
     tc: 小諸城
     sc: ""
     jp: 小諸城
-  comment: Generated from JP↔TC table
 
 CastleKotani:
   value:
     tc: 小谷城
     sc: ""
     jp: 小谷城
-  comment: Generated from JP↔TC table
 
 CastleKouen:
   value:
     tc: 高遠城
     sc: ""
     jp: 高遠城
-  comment: Generated from JP↔TC table
 
 CastleKoukokuTera:
   value:
     tc: 興國寺城
     sc: ""
     jp: 興国寺城
-  comment: Generated from JP↔TC table
 
 CastleKouzan:
   value:
     tc: 甲山城
     sc: ""
     jp: 甲山城
-  comment: Generated from JP↔TC table
 
 CastleKouzuki:
   value:
     tc: 上月城
     sc: ""
     jp: 上月城
-  comment: Generated from JP↔TC table
 
 CastleKozukata:
   value:
     tc: 不來方城
     sc: ""
     jp: 不来方城
-  comment: Generated from JP↔TC table
 
 CastleKumamoto:
   value:
     tc: 隈本城
     sc: ""
     jp: 隈本城
-  comment: Generated from JP↔TC table
 
 CastleKunohe:
   value:
     tc: 九戶城
     sc: ""
     jp: 九戸城
-  comment: Generated from JP↔TC table
 
 CastleKurokawa:
   value:
     tc: 黑川城
     sc: ""
     jp: 黒川城
-  comment: Generated from JP↔TC table
 
 CastleKurume:
   value:
     tc: 久留米城
     sc: ""
     jp: 久留米城
-  comment: Generated from JP↔TC table
 
 CastleKururi:
   value:
     tc: 久留里城
     sc: ""
     jp: 久留里城
-  comment: Generated from JP↔TC table
 
 CastleMasuda:
   value:
     tc: 益田城
     sc: ""
     jp: 益田城
-  comment: Generated from JP↔TC table
 
 CastleMatsukura:
   value:
     tc: 松倉城
     sc: ""
     jp: 松倉城
-  comment: Generated from JP↔TC table
 
 CastleMihara:
   value:
     tc: 三原城
     sc: ""
     jp: 三原城
-  comment: Generated from JP↔TC table
 
 CastleMiki:
   value:
     tc: 三木城
     sc: ""
     jp: 三木城
-  comment: Generated from JP↔TC table
 
 CastleMinato:
   value:
     tc: 湊城
     sc: ""
     jp: 湊城
-  comment: Generated from JP↔TC table
 
 CastleMinowa:
   value:
     tc: 箕輪城
     sc: ""
     jp: 箕輪城
-  comment: Generated from JP↔TC table
 
 CastleMito:
   value:
     tc: 水戶城
     sc: ""
     jp: 水戸城
-  comment: Generated from JP↔TC table
 
 CastleMitoya:
   value:
     tc: 三刀屋城
     sc: ""
     jp: 三刀屋城
-  comment: Generated from JP↔TC table
 
 CastleMitsuboshi:
   value:
     tc: 三星城
     sc: ""
     jp: 三星城
-  comment: Generated from JP↔TC table
 
 CastleMiyazu:
   value:
     tc: 宮津城
     sc: ""
     jp: 宮津城
-  comment: Generated from JP↔TC table
 
 CastleMuya:
   value:
     tc: 撫養城
     sc: ""
     jp: 撫養城
-  comment: Generated from JP↔TC table
 
 CastleMyou:
   value:
     tc: 名生城
     sc: ""
     jp: 名生城
-  comment: Generated from JP↔TC table
 
 CastleNagashima:
   value:
     tc: 長島城
     sc: ""
     jp: 長島城
-  comment: Generated from JP↔TC table
 
 CastleNagashino:
   value:
     tc: 長篠城
     sc: ""
     jp: 長篠城
-  comment: Generated from JP↔TC table
 
 CastleNagono:
   value:
     tc: 那古野城
     sc: ""
     jp: 那古野城
-  comment: Generated from JP↔TC table
 
 CastleNai:
   value:
     tc: 內城
     sc: ""
     jp: 内城
-  comment: Generated from JP↔TC table
 
 CastleNakamura:
   value:
     tc: 中村城
     sc: ""
     jp: 中村城
-  comment: Generated from JP↔TC table
 
 CastleNanao:
   value:
     tc: 七尾城
     sc: ""
     jp: 七尾城
-  comment: Generated from JP↔TC table
 
 CastleNarumi:
   value:
     tc: 鳴海城
     sc: ""
     jp: 鳴海城
-  comment: Generated from JP↔TC table
 
 CastleNihonmatsu:
   value:
     tc: 二本松城
     sc: ""
     jp: 二本松城
-  comment: Generated from JP↔TC table
 
 CastleNijou:
   value:
     tc: 二條城
     sc: ""
     jp: 二条城
-  comment: Generated from JP↔TC table
 
 CastleNin:
   value:
     tc: 忍城
     sc: ""
     jp: 忍城
-  comment: Generated from JP↔TC table
 
 CastleNirayama:
   value:
     tc: 韭山城
     sc: ""
     jp: 韮山城
-  comment: Generated from JP↔TC table
 
 CastleNumata:
   value:
     tc: 沼田城
     sc: ""
     jp: 沼田城
-  comment: Generated from JP↔TC table
 
 CastleOChaku:
   value:
     tc: 御著城
     sc: ""
     jp: 御着城
-  comment: Generated from JP↔TC table
 
 CastleOUra:
   value:
     tc: 尾浦城
     sc: ""
     jp: 尾浦城
-  comment: Generated from JP↔TC table
 
 CastleObi:
   value:
     tc: 飫肥城
     sc: ""
     jp: 飫肥城
-  comment: Generated from JP↔TC table
 
 CastleOda:
   value:
     tc: 小田城
     sc: ""
     jp: 小田城
-  comment: Generated from JP↔TC table
 
 CastleOdaka:
   value:
     tc: 小高城
     sc: ""
     jp: 小高城
-  comment: Generated from JP↔TC table
 
 CastleOdawara:
   value:
     tc: 小田原城
     sc: ""
     jp: 小田原城
-  comment: Generated from JP↔TC table
 
 CastleOgura:
   value:
     tc: 小倉城
     sc: ""
     jp: 小倉城
-  comment: Generated from JP↔TC table
 
 CastleOka:
   value:
     tc: 岡城
     sc: ""
     jp: 岡城
-  comment: Generated from JP↔TC table
 
 CastleOkayama:
   value:
     tc: 岡山城
     sc: ""
     jp: 岡山城
-  comment: Generated from JP↔TC table
 
 CastleOkazaki:
   value:
     tc: 岡崎城
     sc: ""
     jp: 岡崎城
-  comment: Generated from JP↔TC table
 
 CastleOkishio:
   value:
     tc: 置鹽城
     sc: ""
     jp: 置塩城
-  comment: Generated from JP↔TC table
 
 CastleOkou:
   value:
     tc: 岡豐城
     sc: ""
     jp: 岡豊城
-  comment: Generated from JP↔TC table
 
 CastleOogaki:
   value:
     tc: 大垣城
     sc: ""
     jp: 大垣城
-  comment: Generated from JP↔TC table
 
 CastleOokouchi:
   value:
     tc: 大河內城
     sc: ""
     jp: 大河内城
-  comment: Generated from JP↔TC table
 
 CastleOomura:
   value:
     tc: 大村城
     sc: ""
     jp: 大村城
-  comment: Generated from JP↔TC table
 
 CastleOosumiKouzan:
   value:
     tc: 大隅高山城
     sc: ""
     jp: 大隅高山城
-  comment: Generated from JP↔TC table
 
 CastleOota:
   value:
     tc: 太田城
     sc: ""
     jp: 太田城
-  comment: Generated from JP↔TC table
 
 CastleOoura:
   value:
     tc: 大浦城
     sc: ""
     jp: 大浦城
-  comment: Generated from JP↔TC table
 
 CastleOyama:
   value:
     tc: 小山城
     sc: ""
     jp: 小山城
-  comment: Generated from JP↔TC table
 
 CastleOyama2:
   value:
     tc: 尾山城
     sc: ""
     jp: 尾山城
-  comment: Generated from JP↔TC table
 
 CastleSaKa:
   value:
     tc: 佐嘉城
     sc: ""
     jp: 佐嘉城
-  comment: Generated from JP↔TC table
 
 CastleSaeki:
   value:
     tc: 佐伯城
     sc: ""
     jp: 佐伯城
-  comment: Generated from JP↔TC table
 
 CastleSaika:
   value:
     tc: 雜賀城
     sc: ""
     jp: 雑賀城
-  comment: Generated from JP↔TC table
 
 CastleSakamoto:
   value:
     tc: 坂本城
     sc: ""
     jp: 坂本城
-  comment: Generated from JP↔TC table
 
 CastleSakenobe:
   value:
     tc: 鮭延城
     sc: ""
     jp: 鮭延城
-  comment: Generated from JP↔TC table
 
 CastleSakura:
   value:
     tc: 佐倉城
     sc: ""
     jp: 佐倉城
-  comment: Generated from JP↔TC table
 
 CastleSakuraO:
   value:
     tc: 櫻尾城
     sc: ""
     jp: 桜尾城
-  comment: Generated from JP↔TC table
 
 CastleSannohe:
   value:
     tc: 三戶城
     sc: ""
     jp: 三戸城
-  comment: Generated from JP↔TC table
 
 CastleSatouGinzan:
   value:
     tc: 佐東銀山城
     sc: ""
     jp: 佐東銀山城
-  comment: Generated from JP↔TC table
 
 CastleSawaYama:
   value:
     tc: 佐和山城
     sc: ""
     jp: 佐和山城
-  comment: Generated from JP↔TC table
 
 CastleSendai:
   value:
     tc: 仙台城
     sc: ""
     jp: 仙台城
-  comment: Generated from JP↔TC table
 
 CastleShibata:
   value:
     tc: 新發田城
     sc: ""
     jp: 新発田城
-  comment: Generated from JP↔TC table
 
 CastleShigiYama:
   value:
     tc: 信貴山城
     sc: ""
     jp: 信貴山城
-  comment: Generated from JP↔TC table
 
 CastleShinguu:
   value:
     tc: 新宮城
     sc: ""
     jp: 新宮城
-  comment: Generated from JP↔TC table
 
 CastleShiroiTani:
   value:
     tc: 城井谷城
     sc: ""
     jp: 城井谷城
-  comment: Generated from JP↔TC table
 
 CastleShiroishi:
   value:
     tc: 白石城
     sc: ""
     jp: 白石城
-  comment: Generated from JP↔TC table
 
 CastleShiroji:
   value:
     tc: 白地城
     sc: ""
     jp: 白地城
-  comment: Generated from JP↔TC table
 
 CastleShiroshika:
   value:
     tc: 白鹿城
     sc: ""
     jp: 白鹿城
-  comment: Generated from JP↔TC table
 
 CastleShouryuuTera:
   value:
     tc: 勝龍寺城
     sc: ""
     jp: 勝龍寺城
-  comment: Generated from JP↔TC table
 
 CastleShouzui:
   value:
     tc: 勝瑞城
     sc: ""
     jp: 勝瑞城
-  comment: Generated from JP↔TC table
 
 CastleShussui:
   value:
     tc: 出水城
     sc: ""
     jp: 出水城
-  comment: Generated from JP↔TC table
 
 CastleSone:
   value:
     tc: 曾根城
     sc: ""
     jp: 曽根城
-  comment: Generated from JP↔TC table
 
 CastleSukagawa:
   value:
     tc: 須賀川城
     sc: ""
     jp: 須賀川城
-  comment: Generated from JP↔TC table
 
 CastleSumoto:
   value:
     tc: 洲本城
     sc: ""
     jp: 洲本城
-  comment: Generated from JP↔TC table
 
 CastleSunomata:
   value:
     tc: 墨俁城
     sc: ""
     jp: 墨俣城
-  comment: Generated from JP↔TC table
 
 CastleSunpu:
   value:
     tc: 駿府城
     sc: ""
     jp: 駿府城
-  comment: Generated from JP↔TC table
 
 CastleTabunYama:
   value:
     tc: 多聞山城
     sc: ""
     jp: 多聞山城
-  comment: Generated from JP↔TC table
 
 CastleTachibanaYama:
   value:
     tc: 立花山城
     sc: ""
     jp: 立花山城
-  comment: Generated from JP↔TC table
 
 CastleTakaTenjin:
   value:
     tc: 高天神城
     sc: ""
     jp: 高天神城
-  comment: Generated from JP↔TC table
 
 CastleTakamizuTera:
   value:
     tc: 高水寺城
     sc: ""
     jp: 高水寺城
-  comment: Generated from JP↔TC table
 
 CastleTakaya:
   value:
     tc: 高屋城
     sc: ""
     jp: 高屋城
-  comment: Generated from JP↔TC table
 
 CastleTamanawa:
   value:
     tc: 玉繩城
     sc: ""
     jp: 玉縄城
-  comment: Generated from JP↔TC table
 
 CastleTanbaKameyama:
   value:
     tc: 丹波龜山城
     sc: ""
     jp: 丹波亀山城
-  comment: Generated from JP↔TC table
 
 CastleTatebayashi:
   value:
     tc: 館林城
     sc: ""
     jp: 館林城
-  comment: Generated from JP↔TC table
 
 CastleTekichokuKeSaki:
   value:
     tc: 躑躅崎城
     sc: ""
     jp: 躑躅ヶ崎城
-  comment: Generated from JP↔TC table
 
 CastleTenjinYama:
   value:
     tc: 天神山城
     sc: ""
     jp: 天神山城
-  comment: Generated from JP↔TC table
 
 CastleTeraike:
   value:
     tc: 寺池城
     sc: ""
     jp: 寺池城
-  comment: Generated from JP↔TC table
 
 CastleToba:
   value:
     tc: 鳥羽城
     sc: ""
     jp: 鳥羽城
-  comment: Generated from JP↔TC table
 
 CastleTochio:
   value:
     tc: 栃尾城
     sc: ""
     jp: 栃尾城
-  comment: Generated from JP↔TC table
 
 CastleToishi:
   value:
     tc: 戶石城
     sc: ""
     jp: 戸石城
-  comment: Generated from JP↔TC table
 
 CastleToishiYama:
   value:
     tc: 砥石山城
     sc: ""
     jp: 砥石山城
-  comment: Generated from JP↔TC table
 
 CastleTonokoori:
   value:
     tc: 都於郡城
     sc: ""
     jp: 都於郡城
-  comment: Generated from JP↔TC table
 
 CastleTottori:
   value:
     tc: 鳥取城
     sc: ""
     jp: 鳥取城
-  comment: Generated from JP↔TC table
 
 CastleTougou:
   value:
     tc: 十河城
     sc: ""
     jp: 十河城
-  comment: Generated from JP↔TC table
 
 CastleToyama:
   value:
     tc: 富山城
     sc: ""
     jp: 富山城
-  comment: Generated from JP↔TC table
 
 CastleTsuchiura:
   value:
     tc: 土浦城
     sc: ""
     jp: 土浦城
-  comment: Generated from JP↔TC table
 
 CastleUmayabashi:
   value:
     tc: 廄橋城
     sc: ""
     jp: 厩橋城
-  comment: Generated from JP↔TC table
 
 CastleUozu:
   value:
     tc: 魚津城
     sc: ""
     jp: 魚津城
-  comment: Generated from JP↔TC table
 
 CastleUtsunomiya:
   value:
     tc: 宇都宮城
     sc: ""
     jp: 宇都宮城
-  comment: Generated from JP↔TC table
 
 CastleUwaShima:
   value:
     tc: 宇和島城
     sc: ""
     jp: 宇和島城
-  comment: Generated from JP↔TC table
 
 CastleYagami:
   value:
     tc: 八上城
     sc: ""
     jp: 八上城
-  comment: Generated from JP↔TC table
 
 CastleYamabuki:
   value:
     tc: 山吹城
     sc: ""
     jp: 山吹城
-  comment: Generated from JP↔TC table
 
 CastleYamagata:
   value:
     tc: 山形城
     sc: ""
     jp: 山形城
-  comment: Generated from JP↔TC table
 
 CastleYamaguchi:
   value:
     tc: 山口城
     sc: ""
     jp: 山口城
-  comment: Generated from JP↔TC table
 
 CastleYamatokooriyama:
   value:
     tc: 大和郡山城
     sc: ""
     jp: 大和郡山城
-  comment: Generated from JP↔TC table
 
 CastleYanagawa:
   value:
     tc: 柳川城
     sc: ""
     jp: 柳川城
-  comment: Generated from JP↔TC table
 
 CastleYatsushiro:
   value:
     tc: 八代城
     sc: ""
     jp: 八代城
-  comment: Generated from JP↔TC table
 
 CastleYokote:
   value:
     tc: 橫手城
     sc: ""
     jp: 横手城
-  comment: Generated from JP↔TC table
 
 CastleYonezawa:
   value:
     tc: 米澤城
     sc: ""
     jp: 米沢城
-  comment: Generated from JP↔TC table
 
 CastleYoshida:
   value:
     tc: 吉田城
     sc: ""
     jp: 吉田城
-  comment: Generated from JP↔TC table
 
 CastleYoshidaKouriyama:
   value:
     tc: 吉田郡山城
     sc: ""
     jp: 吉田郡山城
-  comment: Generated from JP↔TC table
 
 CastleYuChiku:
   value:
     tc: 湯築城
     sc: ""
     jp: 湯築城
-  comment: Generated from JP↔TC table
 
 CastleYuuki:
   value:
     tc: 結城城
     sc: ""
     jp: 結城城
-  comment: Generated from JP↔TC table
 
 # Towns
 
@@ -1284,462 +1096,396 @@ TownAburatsu:
     tc: 油津之町
     sc: ""
     jp: 油津の町
-  comment: Generated from JP↔TC table
 
 TownAizu:
   value:
     tc: 會津之町
     sc: ""
     jp: 会津の町
-  comment: Generated from JP↔TC table
 
 TownAkamagaseki:
   value:
     tc: 赤間關之町
     sc: ""
     jp: 赤間関の町
-  comment: Generated from JP↔TC table
 
 TownAshikaga:
   value:
     tc: 足利之町
     sc: ""
     jp: 足利の町
-  comment: Generated from JP↔TC table
 
 TownEdo:
   value:
     tc: 江戶之町
     sc: ""
     jp: 江戸の町
-  comment: Generated from JP↔TC table
 
 TownFunai:
   value:
     tc: 府內之町
     sc: ""
     jp: 府内の町
-  comment: Generated from JP↔TC table
 
 TownFuzan:
   value:
     tc: 釜山之町
     sc: ""
     jp: 釜山の町
-  comment: Generated from JP↔TC table
 
 TownHakata:
   value:
     tc: 博多之町
     sc: ""
     jp: 博多の町
-  comment: Generated from JP↔TC table
 
 TownHamamatsu:
   value:
     tc: 濱松之町
     sc: ""
     jp: 浜松の町
-  comment: Generated from JP↔TC table
 
 TownHanamaki:
   value:
     tc: 花卷之町
     sc: ""
     jp: 花巻の町
-  comment: Generated from JP↔TC table
 
 TownHimeji:
   value:
     tc: 姬路之町
     sc: ""
     jp: 姫路の町
-  comment: Generated from JP↔TC table
 
 TownHirado:
   value:
     tc: 平戶之町
     sc: ""
     jp: 平戸の町
-  comment: Generated from JP↔TC table
 
 TownHirosaki:
   value:
     tc: 弘前之町
     sc: ""
     jp: 弘前の町
-  comment: Generated from JP↔TC table
 
 TownImabari:
   value:
     tc: 今治之町
     sc: ""
     jp: 今治の町
-  comment: Generated from JP↔TC table
 
 TownImahama:
   value:
     tc: 今濱之町
     sc: ""
     jp: 今浜の町
-  comment: Generated from JP↔TC table
 
 TownInoguchi:
   value:
     tc: 井之口之町
     sc: ""
     jp: 井ノ口の町
-  comment: Generated from JP↔TC table
 
 TownIshiyama:
   value:
     tc: 石山之町
     sc: ""
     jp: 石山の町
-  comment: Generated from JP↔TC table
 
 TownItsukushima:
   value:
     tc: 嚴島之町
     sc: ""
     jp: 厳島の町
-  comment: Generated from JP↔TC table
 
 TownIzushi:
   value:
     tc: 出石之町
     sc: ""
     jp: 出石の町
-  comment: Generated from JP↔TC table
 
 TownKakoShima:
   value:
     tc: 鹿兒島之町
     sc: ""
     jp: 鹿児島の町
-  comment: Generated from JP↔TC table
 
 TownKameyama:
   value:
     tc: 龜山之町
     sc: ""
     jp: 亀山の町
-  comment: Generated from JP↔TC table
 
 TownKanazawa:
   value:
     tc: 金澤之町
     sc: ""
     jp: 金沢の町
-  comment: Generated from JP↔TC table
 
 TownKanoya:
   value:
     tc: 鹿屋之町
     sc: ""
     jp: 鹿屋の町
-  comment: Generated from JP↔TC table
 
 TownKashima:
   value:
     tc: 鹿島之町
     sc: ""
     jp: 鹿島の町
-  comment: Generated from JP↔TC table
 
 TownKisarazu:
   value:
     tc: 木更津之町
     sc: ""
     jp: 木更津の町
-  comment: Generated from JP↔TC table
 
 TownKiyosu:
   value:
     tc: 清洲之町
     sc: ""
     jp: 清洲の町
-  comment: Generated from JP↔TC table
 
 TownKomoro:
   value:
     tc: 小諸之町
     sc: ""
     jp: 小諸の町
-  comment: Generated from JP↔TC table
 
 TownKoufu:
   value:
     tc: 甲府之町
     sc: ""
     jp: 甲府の町
-  comment: Generated from JP↔TC table
 
 TownKurashiki:
   value:
     tc: 倉敷之町
     sc: ""
     jp: 倉敷の町
-  comment: Generated from JP↔TC table
 
 TownKyou:
   value:
     tc: 京之町
     sc: ""
     jp: 京の町
-  comment: Generated from JP↔TC table
 
 TownMarugame:
   value:
     tc: 丸龜之町
     sc: ""
     jp: 丸亀の町
-  comment: Generated from JP↔TC table
 
 TownMatsue:
   value:
     tc: 松江之町
     sc: ""
     jp: 松江の町
-  comment: Generated from JP↔TC table
 
 TownMatsukura:
   value:
     tc: 松倉之町
     sc: ""
     jp: 松倉の町
-  comment: Generated from JP↔TC table
 
 TownMekada:
   value:
     tc: 目加田之町
     sc: ""
     jp: 目加田の町
-  comment: Generated from JP↔TC table
 
 TownNaha:
   value:
     tc: 那霸之町
     sc: ""
     jp: 那覇の町
-  comment: Generated from JP↔TC table
 
 TownNaoetsu:
   value:
     tc: 直江津之町
     sc: ""
     jp: 直江津の町
-  comment: Generated from JP↔TC table
 
 TownNara:
   value:
     tc: 奈良之町
     sc: ""
     jp: 奈良の町
-  comment: Generated from JP↔TC table
 
 TownNaruto:
   value:
     tc: 鳴門之町
     sc: ""
     jp: 鳴門の町
-  comment: Generated from JP↔TC table
 
 TownNeiha:
   value:
     tc: 寧波之町
     sc: ""
     jp: 寧波の町
-  comment: Generated from JP↔TC table
 
 TownObama:
   value:
     tc: 小濱之町
     sc: ""
     jp: 小浜の町
-  comment: Generated from JP↔TC table
 
 TownOdawara:
   value:
     tc: 小田原之町
     sc: ""
     jp: 小田原の町
-  comment: Generated from JP↔TC table
 
 TownOgura:
   value:
     tc: 小倉之町
     sc: ""
     jp: 小倉の町
-  comment: Generated from JP↔TC table
 
 TownOkazaki:
   value:
     tc: 岡崎之町
     sc: ""
     jp: 岡崎の町
-  comment: Generated from JP↔TC table
 
 TownOnomichi:
   value:
     tc: 尾道之町
     sc: ""
     jp: 尾道の町
-  comment: Generated from JP↔TC table
 
 TownOominato:
   value:
     tc: 大湊之町
     sc: ""
     jp: 大湊の町
-  comment: Generated from JP↔TC table
 
 TownOsafune:
   value:
     tc: 長船之町
     sc: ""
     jp: 長船の町
-  comment: Generated from JP↔TC table
 
 TownRuson:
   value:
     tc: 呂宋之町
     sc: ""
     jp: 呂宋の町
-  comment: Generated from JP↔TC table
 
 TownSaika:
   value:
     tc: 雜賀之町
     sc: ""
     jp: 雑賀の町
-  comment: Generated from JP↔TC table
 
 TownSakai:
   value:
     tc: 堺之町
     sc: ""
     jp: 堺の町
-  comment: Generated from JP↔TC table
 
 TownSakata:
   value:
     tc: 酒田之町
     sc: ""
     jp: 酒田の町
-  comment: Generated from JP↔TC table
 
 TownSakura:
   value:
     tc: 佐倉之町
     sc: ""
     jp: 佐倉の町
-  comment: Generated from JP↔TC table
 
 TownSendai:
   value:
     tc: 仙台之町
     sc: ""
     jp: 仙台の町
-  comment: Generated from JP↔TC table
 
 TownSunpu:
   value:
     tc: 駿府之町
     sc: ""
     jp: 駿府の町
-  comment: Generated from JP↔TC table
 
 TownSuwa:
   value:
     tc: 諏訪之町
     sc: ""
     jp: 諏訪の町
-  comment: Generated from JP↔TC table
 
 TownTottori:
   value:
     tc: 鳥取之町
     sc: ""
     jp: 鳥取の町
-  comment: Generated from JP↔TC table
 
 TownToyama:
   value:
     tc: 富山之町
     sc: ""
     jp: 富山の町
-  comment: Generated from JP↔TC table
 
 TownTsuchizakiMinato:
   value:
     tc: 土崎湊之町
     sc: ""
     jp: 土崎湊の町
-  comment: Generated from JP↔TC table
 
 TownTsuruga:
   value:
     tc: 敦賀之町
     sc: ""
     jp: 敦賀の町
-  comment: Generated from JP↔TC table
 
 TownTsuyama:
   value:
     tc: 津山之町
     sc: ""
     jp: 津山の町
-  comment: Generated from JP↔TC table
 
 TownUmayabashi:
   value:
     tc: 廄橋之町
     sc: ""
     jp: 厩橋の町
-  comment: Generated from JP↔TC table
 
 TownUrato:
   value:
     tc: 浦戶之町
     sc: ""
     jp: 浦戸の町
-  comment: Generated from JP↔TC table
 
 TownUsukeshi:
   value:
     tc: 宇須岸之町
     sc: ""
     jp: 宇須岸の町
-  comment: Generated from JP↔TC table
 
 TownWaShima:
   value:
     tc: 輪島之町
     sc: ""
     jp: 輪島の町
-  comment: Generated from JP↔TC table
 
 TownYanagawa:
   value:
     tc: 柳川之町
     sc: ""
     jp: 柳川の町
-  comment: Generated from JP↔TC table
 
 TownYatsushiro:
   value:
     tc: 八代之町
     sc: ""
     jp: 八代の町
-  comment: Generated from JP↔TC table
 
 TownYunotsu:
   value:
     tc: 溫泉津之町
     sc: ""
     jp: 温泉津の町
-  comment: Generated from JP↔TC table
 
 # Ninja Villages
 
@@ -1748,84 +1494,72 @@ VillageFuuma:
     tc: 風魔之里
     sc: ""
     jp: 風魔の里
-  comment: Generated from JP↔TC table
 
 VillageGaibun:
   value:
     tc: 外聞之里
     sc: ""
     jp: 外聞の里
-  comment: Generated from JP↔TC table
 
 VillageHachiya:
   value:
     tc: 缽屋之里
     sc: ""
     jp: 鉢屋の里
-  comment: Generated from JP↔TC table
 
 VillageHaguro:
   value:
     tc: 羽黑之里
     sc: ""
     jp: 羽黒の里
-  comment: Generated from JP↔TC table
 
 VillageIga:
   value:
     tc: 伊賀之里
     sc: ""
     jp: 伊賀の里
-  comment: Generated from JP↔TC table
 
 VillageKouka:
   value:
     tc: 甲賀之里
     sc: ""
     jp: 甲賀の里
-  comment: Generated from JP↔TC table
 
 VillageKuroHabaki:
   value:
     tc: 黑脛巾之里
     sc: ""
     jp: 黒脛巾の里
-  comment: Generated from JP↔TC table
 
 VillageNegoro:
   value:
     tc: 根來之里
     sc: ""
     jp: 根来の里
-  comment: Generated from JP↔TC table
 
 VillageNokizaru:
   value:
     tc: 軒猿之里
     sc: ""
     jp: 軒猿の里
-  comment: Generated from JP↔TC table
 
 VillageSuppa:
   value:
     tc: 透波之里
     sc: ""
     jp: 透波の里
-  comment: Generated from JP↔TC table
 
 VillageTogakushi:
   value:
     tc: 戶隱之里
     sc: ""
     jp: 戸隠の里
-  comment: Generated from JP↔TC table
 
 VillageYamaKuguri:
   value:
     tc: 山潛之里
     sc: ""
     jp: 山くぐりの里
-  comment: Generated from JP↔TC table
 
 # Pirate Bases
 
@@ -1834,116 +1568,99 @@ PirateBase:
     tc: ■砦
     sc: ""
     jp: ■砦
-  comment: Generated from JP↔TC table
 
 PirateBaseBounotsu:
   value:
     tc: 坊津砦
     sc: ""
     jp: 坊津砦
-  comment: Generated from JP↔TC table
 
 PirateBaseEgawa:
   value:
     tc: 江川砦
     sc: ""
     jp: 江川砦
-  comment: Generated from JP↔TC table
 
 PirateBaseIchiShakuYa:
   value:
     tc: 一尺屋砦
     sc: ""
     jp: 一尺屋砦
-  comment: Generated from JP↔TC table
 
 PirateBaseIshinomaki:
   value:
     tc: 石卷砦
     sc: ""
     jp: 石巻砦
-  comment: Generated from JP↔TC table
 
 PirateBaseJuusanMinato:
   value:
     tc: 十三湊砦
     sc: ""
     jp: 十三湊砦
-  comment: Generated from JP↔TC table
 
 PirateBaseKashiwazaki:
   value:
     tc: 柏崎砦
     sc: ""
     jp: 柏崎砦
-  comment: Generated from JP↔TC table
 
 PirateBaseMaizuru:
   value:
     tc: 舞鶴砦
     sc: ""
     jp: 舞鶴砦
-  comment: Generated from JP↔TC table
 
 PirateBaseMihozeki:
   value:
     tc: 美保關砦
     sc: ""
     jp: 美保関砦
-  comment: Generated from JP↔TC table
 
 PirateBaseMisaki:
   value:
     tc: 三崎砦
     sc: ""
     jp: 三崎砦
-  comment: Generated from JP↔TC table
 
 PirateBaseMishima:
   value:
     tc: 三島砦
     sc: ""
     jp: 三島砦
-  comment: Generated from JP↔TC table
 
 PirateBaseOkamoto:
   value:
     tc: 岡本砦
     sc: ""
     jp: 岡本砦
-  comment: Generated from JP↔TC table
 
 PirateBaseShimizu:
   value:
     tc: 清水砦
     sc: ""
     jp: 清水砦
-  comment: Generated from JP↔TC table
 
 PirateBaseShiwaku:
   value:
     tc: 鹽飽砦
     sc: ""
     jp: 塩飽砦
-  comment: Generated from JP↔TC table
 
 PirateBaseSumoto:
   value:
     tc: 洲本砦
     sc: ""
     jp: 洲本砦
-  comment: Generated from JP↔TC table
 
 PirateBaseToba:
   value:
     tc: 鳥羽砦
     sc: ""
     jp: 鳥羽砦
-  comment: Generated from JP↔TC table
 
 PirateBaseToichi:
   value:
     tc: 十市砦
     sc: ""
     jp: 十市砦
-  comment: Generated from JP↔TC table
