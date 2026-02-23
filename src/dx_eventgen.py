@@ -4,19 +4,10 @@ from pathlib import Path
 import difflib
 
 TAB = "\t"
+DEFAULT_LANG = "tc"  # for now we only output Traditional Chinese (tc)
 
 def dx_line(level: int, text: str) -> str:
     return (TAB * level) + text + "\n"
-
-def load_map(path: Path) -> dict:
-    if not path.exists():
-        raise FileNotFoundError(f"Missing enum map file: {path.as_posix()}")
-    data = yaml.safe_load(path.read_text(encoding="utf-8"))
-    if data is None:
-        return {}
-    if not isinstance(data, dict):
-        raise ValueError(f"Enum map must be a YAML mapping (key:value): {path.as_posix()}")
-    return data
 
 def suggest_key(key: str, candidates: list[str]) -> str:
     matches = difflib.get_close_matches(key, candidates, n=3, cutoff=0.6)
@@ -36,16 +27,96 @@ class CompileError(Exception):
         else:
             super().__init__(message)
 
-class EnumMaps:
-    def __init__(self, repo_root: Path):
-        enums_dir = repo_root / "enums"
-        self.towns = load_map(enums_dir / "towns.yaml")
-        self.facilities = load_map(enums_dir / "facilities.yaml")
-        self.characters = load_map(enums_dir / "characters.yaml")
-        self.gender = load_map(enums_dir / "gender.yaml")
-        self.faction_types = load_map(enums_dir / "faction_types.yaml")
+def load_enum_map(path: Path, lang: str = DEFAULT_LANG) -> dict:
+    """
+    Supported enum entry formats:
 
-    def map_from(self, mapping: dict, kind: str, key: str, *, input_file: str, path: str) -> str:
+    Legacy (string):
+      Hero: 主角
+
+    New (object with multi-lang value):
+      Hero:
+        value:
+          tc: 主角
+          sc: ""
+          jp: ""
+        comment: Player character
+
+    Rules:
+      - If value.<lang> exists and is non-empty, use it.
+      - Else fallback to value.tc if non-empty.
+      - Else error.
+    """
+    if not path.exists():
+        return {}
+
+    data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    if data is None:
+        return {}
+    if not isinstance(data, dict):
+        raise ValueError(f"Enum file must be a YAML mapping: {path.as_posix()}")
+
+    out = {}
+    for k, v in data.items():
+        k = str(k)
+
+        # legacy: Key: "中文值"
+        if isinstance(v, str):
+            # Legacy only makes sense for tc output
+            if lang != "tc":
+                raise ValueError(
+                    f"Legacy enum entry only supports tc output: {path.as_posix()} key '{k}'"
+                )
+            out[k] = v
+            continue
+
+        # new: Key: { value: { tc: "...", sc:"", jp:"" }, comment: "..." }
+        if isinstance(v, dict) and "value" in v and isinstance(v["value"], dict):
+            vv = v["value"]
+
+            # preferred language
+            if lang in vv and isinstance(vv[lang], str) and vv[lang].strip() != "":
+                out[k] = vv[lang]
+                continue
+
+            # fallback to tc
+            if "tc" in vv and isinstance(vv["tc"], str) and vv["tc"].strip() != "":
+                out[k] = vv["tc"]
+                continue
+
+            raise ValueError(
+                f"Enum entry missing value.{lang} (and no tc fallback): {path.as_posix()} key '{k}'"
+            )
+
+        raise ValueError(
+            f"Invalid enum entry in {path.as_posix()} for key '{k}'. "
+            f"Expected string OR object with value.tc"
+        )
+
+    return out
+
+class EnumMaps:
+    def __init__(self, repo_root: Path, lang: str = DEFAULT_LANG):
+        self.lang = lang
+
+        # Prefer enums/core/*.yaml; fallback to old enums/*.yaml
+        core = repo_root / "enums" / "core"
+        old = repo_root / "enums"
+
+        # Helper: try core then old
+        def load_core_then_old(filename: str) -> dict:
+            m = load_enum_map(core / filename, lang=self.lang)
+            if m:
+                return m
+            return load_enum_map(old / filename, lang=self.lang)
+
+        self.towns = load_core_then_old("towns.yaml")
+        self.facilities = load_core_then_old("facilities.yaml")
+        self.characters = load_core_then_old("characters.yaml")
+        self.gender = load_core_then_old("gender.yaml")
+        self.faction_types = load_core_then_old("faction_types.yaml")
+
+    def _map(self, mapping: dict, kind: str, key: str, *, input_file: str, path: str) -> str:
         key = str(key)
         if key in mapping:
             return mapping[key]
@@ -56,19 +127,19 @@ class EnumMaps:
         )
 
     def town(self, key: str, *, input_file: str, path: str) -> str:
-        return self.map_from(self.towns, "town", key, input_file=input_file, path=path)
+        return self._map(self.towns, "town", key, input_file=input_file, path=path)
 
     def facility(self, key: str, *, input_file: str, path: str) -> str:
-        return self.map_from(self.facilities, "facility", key, input_file=input_file, path=path)
+        return self._map(self.facilities, "facility", key, input_file=input_file, path=path)
 
     def character(self, key: str, *, input_file: str, path: str) -> str:
-        return self.map_from(self.characters, "character", key, input_file=input_file, path=path)
+        return self._map(self.characters, "character", key, input_file=input_file, path=path)
 
     def gender_value(self, key: str, *, input_file: str, path: str) -> str:
-        return self.map_from(self.gender, "gender", key, input_file=input_file, path=path)
+        return self._map(self.gender, "gender", key, input_file=input_file, path=path)
 
     def faction_type_value(self, key: str, *, input_file: str, path: str) -> str:
-        return self.map_from(self.faction_types, "faction_type", key, input_file=input_file, path=path)
+        return self._map(self.faction_types, "faction_type", key, input_file=input_file, path=path)
 
 def emit_time_before_year_month(level: int, year: int, month: int) -> str:
     # before (Y,M): year<Y OR (year==Y AND month<M)
@@ -263,7 +334,7 @@ def main():
 
     try:
         repo_root = Path(__file__).resolve().parents[1]
-        maps = EnumMaps(repo_root)
+        maps = EnumMaps(repo_root, lang=DEFAULT_LANG)
 
         data = yaml.safe_load(input_path.read_text(encoding="utf-8"))
         dx_script = generate_event(data, maps, input_file=input_file)
