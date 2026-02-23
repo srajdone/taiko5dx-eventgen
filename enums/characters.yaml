@@ -1,4 +1,27 @@
-Hero: 主角
-StrangeGirl: 奇怪的姑娘
-RiceShopBoss: 米屋的老闆
-DrunkenWoman: 喝醉的女人
+Hero:
+  value:
+    tc: 主角
+    sc: ""
+    jp: ""
+  comment: Player character
+
+StrangeGirl:
+  value:
+    tc: 奇怪的姑娘
+    sc: ""
+    jp: ""
+  comment: Generic strange girl
+
+RiceShopBoss:
+  value:
+    tc: 米屋的老闆
+    sc: ""
+    jp: ""
+  comment: Rice shop owner
+
+DrunkenWoman:
+  value:
+    tc: 喝醉的女人
+    sc: ""
+    jp: ""
+  comment: Drunken woman
