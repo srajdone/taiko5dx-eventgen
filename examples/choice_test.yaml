@@ -2,7 +2,7 @@ event_name: Choice_Test
 once: true
 
 trigger:
-  town: KiyosuTown
+  location: TownKiyosu
   facility: RiceShop
 
 script:
