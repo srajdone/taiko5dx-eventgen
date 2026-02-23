@@ -1,3 +1,20 @@
-NinjaClan: 忍者眾
-Ronin: 浪人
-Daimyo: 大名
+NinjaClan:
+  value:
+    tc: 忍者眾
+    sc: ""
+    jp: ""
+  comment: Ninja faction type
+
+Ronin:
+  value:
+    tc: 浪人
+    sc: ""
+    jp: ""
+  comment: Ronin faction type
+
+Daimyo:
+  value:
+    tc: 大名
+    sc: ""
+    jp: ""
+  comment: Daimyo faction type
