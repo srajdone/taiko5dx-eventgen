@@ -2,7 +2,7 @@ event_name: RiceShop_StrangeWoman_Incident
 once: true
 
 trigger:
-  town: KiyosuTown
+  location: TownKiyosu
   facility: RiceShop
 
 script:
