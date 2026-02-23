@@ -1,0 +1,22 @@
+event_name: Choice_Test
+once: true
+
+trigger:
+  town: KiyosuTown
+  facility: RiceShop
+
+script:
+  - narration: "You notice something strange behind the counter."
+  - choice:
+      options:
+        - label: "Confront her"
+          do:
+            - say:
+                speaker: Hero
+                listener: StrangeGirl
+                text: "Stop. What are you doing?"
+            - narration: "She panics and runs away."
+        - label: "Let her go"
+          do:
+            - narration: "You decide not to get involved."
+            - narration: "The woman quickly leaves the shop."
