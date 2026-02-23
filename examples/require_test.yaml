@@ -1,0 +1,22 @@
+event_name: Require_Test
+once: true
+
+trigger:
+  town: KiyosuTown
+  facility: RiceShop
+
+require:
+  gender: Male
+  no_task: true
+  faction_type: NinjaClan
+  money_gt: 5000
+  before_year_month:
+    year: 1590
+    month: 9
+
+script:
+  - narration: "Requirements passed. This event is allowed to run."
+  - say:
+      speaker: Hero
+      listener: RiceShopBoss
+      text: "Just testing conditions."
