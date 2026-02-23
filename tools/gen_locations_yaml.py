@@ -3,7 +3,6 @@ from pathlib import Path
 import csv
 import re
 import sys
-import yaml
 
 try:
     from pykakasi import kakasi
@@ -11,7 +10,8 @@ except Exception:
     print("Missing dependency: pykakasi. Install with: pip3 install pykakasi", file=sys.stderr)
     raise
 
-# Rows to ignore (placeholders / meta)
+
+# Ignore non-location meta rows
 IGNORE_EXACT = {
     "拠点", "城", "町", "忍の里", "海賊の砦",
     "目標拠点", "発生拠点", "主人公拠点", "主人公当主拠点",
@@ -24,95 +24,67 @@ IGNORE_EXACT = {
     "無効",
 }
 
-# We only generate real location enums that match one of these:
-# - ...城
-# - ...の町
-# - ...の里
-# - ...砦
 PAT_CASTLE = re.compile(r".+城$")
 PAT_TOWN   = re.compile(r".+の町$")
 PAT_VILL   = re.compile(r".+の里$")
 PAT_FORT   = re.compile(r".+砦$")
 
+
 def is_real_location(jp: str) -> bool:
     if not jp or jp in IGNORE_EXACT:
         return False
-    return bool(PAT_CASTLE.match(jp) or PAT_TOWN.match(jp) or PAT_VILL.match(jp) or PAT_FORT.match(jp))
+    return bool(
+        PAT_CASTLE.match(jp)
+        or PAT_TOWN.match(jp)
+        or PAT_VILL.match(jp)
+        or PAT_FORT.match(jp)
+    )
+
 
 def strip_suffix(jp: str) -> tuple[str, str]:
-    """Return (kind_prefix, base_name) where kind_prefix in {Castle,Town,Village,PirateBase}"""
     if PAT_CASTLE.match(jp):
-        return "Castle", jp[:-1]  # remove "城"
+        return "Castle", jp[:-1]
     if PAT_TOWN.match(jp):
-        return "Town", jp[:-2]    # remove "の町"
+        return "Town", jp[:-2]
     if PAT_VILL.match(jp):
-        return "Village", jp[:-2] # remove "の里"
+        return "Village", jp[:-2]
     if PAT_FORT.match(jp):
-        return "PirateBase", jp[:-1] # remove "砦"
+        return "PirateBase", jp[:-1]
     raise ValueError(f"Unexpected location format: {jp}")
+
 
 def build_kakasi():
     k = kakasi()
     k.setMode("H", "a")
     k.setMode("K", "a")
     k.setMode("J", "a")
-    # Hepburn-ish
     k.setMode("r", "Hepburn")
-    k.setMode("s", True)   # add spaces
-    k.setMode("C", True)   # capitalize (we still post-process)
+    k.setMode("s", True)
     return k.getConverter()
 
+
 def pascalize(romaji: str) -> str:
-    # romaji may contain spaces/hyphens/apostrophes
     s = romaji.strip()
     s = re.sub(r"[^A-Za-z0-9\s\-']", " ", s)
     parts = re.split(r"[\s\-']+", s)
     parts = [p for p in parts if p]
     return "".join(p[:1].upper() + p[1:].lower() for p in parts)
 
-def load_overrides(path: Path) -> dict[str, str]:
-    """
-    Optional overrides file for better keys:
-    - key: jp_base (without suffix)
-    - value: RomajiBase (PascalCase or raw; we pascalize anyway)
-
-    Example:
-      京: Kyoto
-      大坂: Osaka
-      江戸: Edo
-      清洲: Kiyosu
-      伊賀: Iga
-      甲賀: Koga
-      釜山: Busan
-      寧波: Ningbo
-      那覇: Naha
-      呂宋: Luzon
-    """
-    if not path.exists():
-        return {}
-    data = yaml.safe_load(path.read_text(encoding="utf-8"))
-    if not isinstance(data, dict):
-        raise ValueError("overrides.yaml must be a mapping")
-    return {str(k): str(v) for k, v in data.items()}
 
 def main():
     if len(sys.argv) < 3:
-        print("Usage: python3 tools/gen_locations_yaml.py data/jp_tc_locations.csv enums/core/locations.yaml [data/romaji_overrides.yaml]")
+        print("Usage: python3 tools/gen_locations_yaml.py data/jp_tc_locations.csv enums/core/locations.yaml")
         sys.exit(1)
 
     csv_path = Path(sys.argv[1])
     out_path = Path(sys.argv[2])
-    overrides_path = Path(sys.argv[3]) if len(sys.argv) >= 4 else None
 
     if not csv_path.exists():
         print(f"CSV not found: {csv_path}", file=sys.stderr)
         sys.exit(2)
 
-    overrides = load_overrides(overrides_path) if overrides_path else {}
-
     conv = build_kakasi()
 
-    # read csv (two columns: jp, tc)
     rows: list[tuple[str, str]] = []
     with csv_path.open("r", encoding="utf-8-sig", newline="") as f:
         reader = csv.reader(f)
@@ -132,36 +104,82 @@ def main():
                 continue
             rows.append((jp, tc))
 
-    # Build YAML mapping
-    out = {}
+    out: dict[str, dict] = {}
     used_keys = set()
 
     for jp, tc in rows:
         kind, base = strip_suffix(jp)
 
-        # romaji base: overrides first, else kakasi
-        if base in overrides:
-            romaji_base = overrides[base]
-        else:
-            romaji_base = conv.do(base)  # e.g. "gassan toda"
+        romaji_base = conv.do(base)
         key = kind + pascalize(romaji_base)
 
-        # Avoid collisions: append number if needed
+        # Avoid generic entries
+        if base in {"城", "町", "里", "砦"}:
+            continue
+
         if key in used_keys:
             n = 2
             while f"{key}{n}" in used_keys:
                 n += 1
             key = f"{key}{n}"
+
         used_keys.add(key)
 
         out[key] = {
-            "value": {"tc": tc, "sc": "", "jp": jp},
-            "comment": "Generated from JP↔TC table",
+            "value": {
+                "tc": tc,
+                "sc": "",
+                "jp": jp
+            },
+            "comment": "Generated from JP↔TC table"
         }
 
+    # -------- Beautified output --------
+
+    def group_order(k: str):
+        if k.startswith("Castle"):
+            return (0, k)
+        if k.startswith("Town"):
+            return (1, k)
+        if k.startswith("Village"):
+            return (2, k)
+        if k.startswith("PirateBase"):
+            return (3, k)
+        return (9, k)
+
+    keys_sorted = sorted(out.keys(), key=group_order)
+
+    lines = []
+    lines.append("# Auto-generated file. DO NOT EDIT.")
+    lines.append("# Source: data/jp_tc_locations.csv")
+    lines.append("")
+
+    def emit_group(title: str, prefix: str):
+        group_keys = [k for k in keys_sorted if k.startswith(prefix)]
+        if not group_keys:
+            return
+        lines.append(f"# {title}")
+        lines.append("")
+        for k in group_keys:
+            v = out[k]
+            lines.append(f"{k}:")
+            lines.append("  value:")
+            lines.append(f"    tc: {v['value']['tc']}")
+            lines.append(f"    sc: \"{v['value']['sc']}\"")
+            lines.append(f"    jp: {v['value']['jp']}")
+            lines.append(f"  comment: {v['comment']}")
+            lines.append("")
+
+    emit_group("Castles", "Castle")
+    emit_group("Towns", "Town")
+    emit_group("Ninja Villages", "Village")
+    emit_group("Pirate Bases", "PirateBase")
+
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(yaml.safe_dump(out, allow_unicode=True, sort_keys=True), encoding="utf-8")
+    out_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+
     print(f"Generated: {out_path} ({len(out)} entries)")
+
 
 if __name__ == "__main__":
     main()
