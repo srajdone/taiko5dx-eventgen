@@ -1,9 +1,12 @@
 # Taiko5DX EventGen
 
+![Python](https://img.shields.io/badge/Python-3.12+-blue)
+![Status](https://img.shields.io/badge/status-early--development-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-Mac%20%7C%20Windows-lightgrey)
+
 Write Taiko Risshiden 5 DX events in YAML and compile them into valid DX
 event scripts automatically.
-
----
 
 ## Why?
 
