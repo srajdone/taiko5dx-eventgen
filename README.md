@@ -85,8 +85,8 @@ Roadmap
 
 Vision
 
-The long-term goal is to provide a modern scripting layer for Taiko 5
-DX, allowing the community to create large-scale, modular, maintainable
+The long-term goal is to provide a modern scripting layer for Taiko Risshiden
+5 DX, allowing the community to create large-scale, modular, maintainable
 event projects without touching the original DX syntax.
 
 ------------------------------------------------------------------------
