@@ -164,7 +164,7 @@ RiceMerchant:
 
 - Use English PascalCase
 - No spaces
-- No Chinese in keys
+- No CJK in keys
 - Avoid ambiguity
 - Prefer explicit names (e.g., NinjaClan instead of Ninja)
 
