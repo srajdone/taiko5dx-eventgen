@@ -1,3 +1,20 @@
-RiceShop: 米屋
-Temple: 寺
-Tavern: 酒館
+RiceShop:
+  value:
+    tc: 米屋
+    sc: ""
+    jp: ""
+  comment: Rice shop
+
+Temple:
+  value:
+    tc: 寺
+    sc: ""
+    jp: ""
+  comment: Temple
+
+Tavern:
+  value:
+    tc: 酒館
+    sc: ""
+    jp: ""
+  comment: Tavern
