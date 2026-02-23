@@ -10,18 +10,18 @@ StrangeGirl:
     tc: 奇怪的姑娘
     sc: ""
     jp: ""
-  comment: Generic strange girl
+  comment: Generic NPC (strange girl)
 
 RiceShopBoss:
   value:
     tc: 米屋的老闆
     sc: ""
     jp: ""
-  comment: Rice shop owner
+  comment: Rice shop owner NPC
 
 DrunkenWoman:
   value:
     tc: 喝醉的女人
     sc: ""
     jp: ""
-  comment: Drunken woman
+  comment: Generic NPC (drunken woman)
