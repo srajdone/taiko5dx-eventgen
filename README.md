@@ -52,13 +52,22 @@ Currently supported:
 
 Example (YAML)
 
-event_name: Kiyosu_RiceShop_MysteryWoman once: true
+event_name: Kiyosu_RiceShop_MysteryWoman
+once: true
 
-trigger: type: enter_facility town: 清洲之町 facility: 米屋
+trigger:
+  type: enter_facility
+  town: KiyosuTown
+  facility: RiceShop
 
-script: - narration: “A strange laughter is heard from behind the
-counter.” - rename_say: speaker: 喝醉的女人 listener: 主角 surname: 神秘
-name: 女子 text: “Looking for the shop owner?”
+script:
+  - narration: "A strange laughter is heard from behind the counter."
+  - rename_say:
+      speaker: DrunkenWoman
+      listener: Hero
+      surname: Mysterious
+      name: Woman
+      text: "Looking for the shop owner?"
 
 ------------------------------------------------------------------------
 
