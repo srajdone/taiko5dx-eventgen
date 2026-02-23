@@ -1,0 +1,43 @@
+event_name: RiceShop_StrangeWoman_Incident
+once: true
+
+trigger:
+  town: 清洲之町
+  facility: 米屋
+
+script:
+  - hero_think: "Strange... where is the rice shop owner?"
+
+  - narration: "The shop seems unusually quiet."
+  - narration: "Behind the counter, a woman hurriedly stuffs something into her sleeve."
+
+  - say:
+      speaker: 主角
+      listener: 奇怪的姑娘
+      text: "Excuse me... where is the owner?"
+
+  - narration: "The woman freezes."
+  - narration: "For a brief moment, your eyes meet."
+
+  - rename_say:
+      speaker: 奇怪的姑娘
+      listener: 主角
+      surname: 神秘
+      name: 女子
+      text: "I... I was just leaving."
+
+  - narration: "She quickly walks past you, avoiding your gaze."
+
+  - narration: "Moments later, the rice shop owner enters from outside."
+
+  - say:
+      speaker: 米屋老板
+      listener: 主角
+      text: "Ah! Sorry for the wait. I just stepped out for a moment."
+
+  - say:
+      speaker: 主角
+      listener: 米屋老板
+      text: "I see... I was looking for you."
+
+  - narration: "The shop returns to its normal atmosphere."
