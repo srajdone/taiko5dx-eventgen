@@ -155,7 +155,7 @@ def main():
         used_keys.add(key)
 
         out[key] = {
-            "value": {"tc": tc, "sc": "", "jp": ""},
+            "value": {"tc": tc, "sc": "", "jp": jp},
             "comment": "Generated from JP↔TC table",
         }
 
