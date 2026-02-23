@@ -1,3 +1,20 @@
-KiyosuTown: 清洲之町
-KyotoTown: 京之町
-OsakaTown: 大坂之町
+KiyosuTown:
+  value:
+    tc: 清洲之町
+    sc: ""
+    jp: ""
+  comment: Kiyosu town
+
+KyotoTown:
+  value:
+    tc: 京之町
+    sc: ""
+    jp: ""
+  comment: Kyoto town
+
+OsakaTown:
+  value:
+    tc: 大坂之町
+    sc: ""
+    jp: ""
+  comment: Osaka town
