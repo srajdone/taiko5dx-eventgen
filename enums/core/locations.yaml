@@ -1,0 +1,29 @@
+TownKiyosu:
+  value:
+    tc: 清洲之町
+    sc: ""
+    jp: ""
+  comment: Town (Kiyosu)
+
+TownKyoto:
+  value:
+    tc: 京之町
+    sc: ""
+    jp: ""
+  comment: Town (Kyoto)
+
+TownOsaka:
+  value:
+    tc: 大坂之町
+    sc: ""
+    jp: ""
+  comment: Town (Osaka)
+
+  CastleKiyosu:
+  value:
+    tc: 清洲城
+    sc: ""
+    jp: ""
+  comment: Castle (Kiyosu)
+
+  
