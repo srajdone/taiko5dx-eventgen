@@ -19,11 +19,9 @@ TownOsaka:
     jp: ""
   comment: Town (Osaka)
 
-  CastleKiyosu:
+CastleKiyosu:
   value:
     tc: 清洲城
     sc: ""
     jp: ""
   comment: Castle (Kiyosu)
-
-  
