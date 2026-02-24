@@ -12,7 +12,7 @@ StrangeGirl:
     jp: ""
   comment: Generic NPC (strange girl)
 
-RiceShopBoss:
+RiceMerchant:
   value:
     tc: 米屋的老闆
     sc: ""
